@@ -1,0 +1,33 @@
+{
+  "name": "anime-search",
+  "version": "1.0.0",
+  "description": "This is an app where we can search for various anime related news and anime.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faharetana-rkt/anime-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faharetana-rkt/anime-search/issues"
+  },
+  "homepage": "https://github.com/faharetana-rkt/anime-search#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.9"
+  }
+}
