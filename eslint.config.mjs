@@ -25,8 +25,6 @@ export default [
     },
     rules: {
       ...prettierConfig.rules,
-      "prettier/prettier": "error",
-
       // Custom ESLint rules
       "no-unused-vars": ["warn", { argsIgnorePattern: "res|next|^err" }],
       "arrow-body-style": ["error", "as-needed"],
