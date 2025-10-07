@@ -1,0 +1,146 @@
+/*---------------- VARIABLES ----------------*/
+:root {
+  --background-color: #1a1a2e;
+  --pink: #ff4c98;
+  --sky-blue: #00d2ff;
+  --gold: #ffd700;
+  --text-color: #ffffff;
+  --text-color2: black;
+  --header-font: "Bangers", "Comic Sans MS", "Impact", cursive;
+  --para-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --para-margin: 10px 0 10px 0;
+  --text-margin: 10px;
+}
+
+html,
+body {
+  font-family: var(--para-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*----------------- HEADER ------------------*/
+#logo img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+#logo {
+  display: block;
+  max-width: 150px;
+  padding: 11px;
+}
+
+.navLink {
+  padding-left: 0;
+  margin: 0;
+}
+
+.navLink li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  padding: 11px;
+  font-size: 1.2rem;
+  font-family: var(--para-font);
+  color: var(--text-color);
+}
+
+.link:hover {
+  background-color: var(--gold);
+  color: var(--text-color2);
+}
+
+#menu {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 5px;
+  width: 44px;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "\00D7";
+}
+
+#animateme {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+.navLink {
+  overflow: hidden;
+}
+
+#animateme.open {
+  grid-template-rows: 1fr;
+}
+
+/*----------------- FOOTER ------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 0.5rem;
+}
+
+.class-info {
+  text-align: center;
+}
+
+.class-info p {
+  margin: var(--para-margin);
+}
+
+.contacts {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contacts a {
+  padding: 5px;
+  color: var(--gold);
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--sky-blue);
+  }
+}
+
+.contacts h3 {
+  margin-top: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.demo-video {
+  margin: 25px 0 25px 0;
+}
+
+.demo-video a {
+  color: var(--text-color2);
+  padding: 15px;
+  background-color: var(--gold);
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: var(--sky-blue);
+  }
+}

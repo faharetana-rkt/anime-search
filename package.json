@@ -4,11 +4,12 @@
   "description": "This is an app where we can search for various anime related news and anime.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "vite build",
+    "start": "vite",
+    "test": "jest",
+    "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "format": "prettier --write ."
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\""
   },
   "repository": {
     "type": "git",
