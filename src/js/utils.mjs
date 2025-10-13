@@ -25,5 +25,13 @@ export function detectActivePage(links) {
     });
 };
 
+export function renderListWithTemplate(parentElement, templateFn, list, position = "afterbegin", clear = true) {
+    if(clear) {
+        parentElement.innerHTML = "";
+    }
+    const templateArray = list.map(templateFn);
+    parentElement.insertAdjacentHTML(position, templateArray.join(""));
+};
+
 
 
