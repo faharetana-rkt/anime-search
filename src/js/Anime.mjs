@@ -3,10 +3,13 @@ import Data from "./Data.mjs";
 
 function templateFunction(anime) {
     return `
-    <div class="anime-card">
+    <div class="anime-card" data-animeId="${anime.mal_id}">
     <img src="${anime.images.webp.large_image_url}" alt="${anime.title} image" loading="lazy">
-    <p>${anime.score}</p>
-    <p>${anime.title}</p>
+    <p class="score">⭐ ${anime.score}</p>
+    <div class="overlay">
+    <p><span class="bold-underline">Title:</span> ${anime.title}</p>
+    <p><span class="bold-underline">Year:</span> ${anime.year}</p>
+    </div>
     </div>
     `;
 
@@ -21,6 +24,7 @@ export default class Anime {
     async init() {
         const anime = new Data(baseURL);
         const animeData = await anime.getData();
+        console.log(animeData);
         this.renderAnimeNews(animeData.data);
     }
     renderAnimeNews(list) {

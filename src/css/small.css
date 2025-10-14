@@ -19,6 +19,11 @@ body {
   color: var(--text-color);
 }
 
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /*----------------- HEADER ------------------*/
 #logo img {
   border-radius: 50%;
@@ -143,4 +148,102 @@ footer a {
   &:hover {
     background-color: var(--sky-blue);
   }
+}
+
+/*----------------- HOMEPAGE ------------------*/
+.news-card {
+  width: 80%;
+  border: solid white 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  box-shadow: var(--pink) 5px 5px 5px;
+
+  & a {
+    background: var(--gold);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: var(--sky-blue);
+    }
+  }
+}
+
+.homepage {
+  margin-left: 15px;
+
+  & h2, & h1 {
+    font-family: var(--header-font);
+    letter-spacing: 1.5px;
+  }
+
+  & h2 {
+    margin-left: 7.5px;
+  }
+}
+
+.anime-card {
+  position: relative;   
+  width: 200px;
+  height: 283px;      
+  margin: 20px;  
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease transform;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.anime-card img {
+  width: 100%;          /* make image responsive */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.score {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(26, 26, 46, 0.6);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.overlay {
+ position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: rgba(255, 215, 0, 0.8);
+  color: var(--background-color);
+  transform: translateY(110%); /* hidden off the bottom */
+  transition: transform 0.3s ease-out;
+  box-sizing: border-box;
+
+  & p {
+    margin: 5px 10px 5px 10px;
+  }
+}
+
+.anime-card:hover .overlay {
+  transform: translateY(0); /* slide up into view when parent is hovered */
+}
+
+#top-animes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

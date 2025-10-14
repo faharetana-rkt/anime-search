@@ -15,9 +15,9 @@ function templateFunction(news) {
     const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}`;
     return `
     <div class="news-card">
-    <p>Published date: ${formattedDate}</p>
+    <p><span class=bold-underline>Published date</span>: ${formattedDate}</p>
     <p>${news.title}</p>
-    <p>Source: ${news.source}, <a href="${news.link}" target="_blank" class="news-link">Click to learn more</a></p>
+    <p><span class=bold-underline>Source</span>: ${news.source} <a href="${news.link}" target="_blank" class="news-link">Click to learn more</a></p>
     </div>
     `
 }
