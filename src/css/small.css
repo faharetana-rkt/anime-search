@@ -178,6 +178,7 @@ footer a {
 
 .homepage {
   margin-left: 15px;
+  margin-bottom: 20px;
 
   & h2, & h1 {
     font-family: var(--header-font);
@@ -246,4 +247,8 @@ footer a {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+#anime-news-home {
+  margin-bottom: 60px;
 }

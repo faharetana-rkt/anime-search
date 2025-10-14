@@ -1,6 +1,6 @@
 import { renderYear, toggleOpenClass, detectActivePage } from "./utils.mjs";
 import AnimeNews from "./AnimeNews.mjs";
-import Anime from "./Anime.mjs";
+import Anime from "./Animes.mjs";
 // import Data from "./Data.mjs";
 
 renderYear(document.querySelector("#currentYear"));

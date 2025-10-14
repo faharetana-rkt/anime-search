@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
+        anime: resolve(__dirname, "src/anime_pages/index.html")
       },
     },
   },

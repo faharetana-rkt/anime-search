@@ -33,5 +33,18 @@ export function renderListWithTemplate(parentElement, templateFn, list, position
     parentElement.insertAdjacentHTML(position, templateArray.join(""));
 };
 
+export function renderWithTemplate (parentElement, templateFn, position = "afterbegin", clear = true) {
+    if(clear) {
+        parentElement.innerHTML = "";
+    }
+    parentElement.insertAdjacentHTML(position, templateFn);
+};
+
+export function getParams(name) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const anime = urlParams.get(name);
+    return anime;
+};
 
 
