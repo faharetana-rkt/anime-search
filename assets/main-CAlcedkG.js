@@ -1,4 +1,4 @@
-import{D as a,r as s,a as d,t as p,d as m}from"./Data-DxAP7nOO.js";function u(e){const t=e.date,n=new Date(t),r=String(n.getUTCDate()).padStart(2,"0"),i=String(n.getUTCMonth()+1).padStart(2,"0"),o=n.getUTCFullYear(),c=String(n.getUTCHours()).padStart(2,"0"),l=String(n.getUTCMinutes()).padStart(2,"0");return`
+import{D as a,r as s,a as d,t as p,d as m}from"./Data-CJKnQeEM.js";function u(e){const t=e.date,n=new Date(t),r=String(n.getUTCDate()).padStart(2,"0"),i=String(n.getUTCMonth()+1).padStart(2,"0"),o=n.getUTCFullYear(),c=String(n.getUTCHours()).padStart(2,"0"),l=String(n.getUTCMinutes()).padStart(2,"0");return`
     <div class="news-card">
     <p><span class=bold-underline>Published date</span>: ${`${r}/${i}/${o} ${c}:${l}`}</p>
     <p>${e.title}</p>

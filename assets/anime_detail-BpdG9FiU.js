@@ -1,4 +1,4 @@
-import{g as c,D as d,b as p,a as u,t as m,d as b}from"./Data-DxAP7nOO.js";function h(e){const a=[];e.streaming.forEach(n=>{const s=`<a href="${n.url}" target="_blank"><span>${n.name}</span></a>`;a.push(s)});const l=[];e.studios.forEach(n=>{const s=n.name;l.push(s)});const r=[];e.themes.forEach(n=>{const s=n.name;r.push(s)});const t=[];e.producers.forEach(n=>{const s=n.name;t.push(s)});const o=[];return e.demographics.forEach(n=>{const s=n.name;o.push(s)}),`
+import{g as c,D as d,b as p,a as u,t as m,d as b}from"./Data-CJKnQeEM.js";function h(e){const a=[];e.streaming.forEach(n=>{const s=`<a href="${n.url}" target="_blank"><span>${n.name}</span></a>`;a.push(s)});const l=[];e.studios.forEach(n=>{const s=n.name;l.push(s)});const r=[];e.themes.forEach(n=>{const s=n.name;r.push(s)});const t=[];e.producers.forEach(n=>{const s=n.name;t.push(s)});const o=[];return e.demographics.forEach(n=>{const s=n.name;o.push(s)}),`
         <div class="anime-container">
         <img src="${e.images.webp.large_image_url}">
         <ul>
