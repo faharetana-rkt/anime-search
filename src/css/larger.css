@@ -55,8 +55,9 @@
     & ul {
       width: 70%;
     }
+    
     & img {
-      width: auto;
+      width: 20%;
       height: auto;
       align-self: flex-start;
     }
