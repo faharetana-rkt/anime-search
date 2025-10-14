@@ -49,4 +49,23 @@
     justify-items: center;
     justify-content: space-around;
   }
+
+  /*----------------- ANIME DETAIL ------------------*/
+  .anime-container {
+    & ul {
+      width: 70%;
+    }
+    & img {
+      width: auto;
+      height: auto;
+      align-self: flex-start;
+    }
+  }
+
+  .youtube-trailer {
+    width: 730px;
+    height: 500px;
+  }
+
+
 }

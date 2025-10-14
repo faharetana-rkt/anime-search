@@ -18,7 +18,7 @@ function templateFunction(anime) {
 
 const baseURL = "https://api.jikan.moe/v4/top/anime?type=tv&filter=bypopularity&sfw=true&limit=25";
 
-export default class Anime {
+export default class Animes {
     constructor(parentElement) {
         this.parentElement = parentElement;
     }
