@@ -7,7 +7,7 @@ function templateFunction(anime) {
     <button class="remove-from-favorite" aria-label="remove from favorite button" data-id="${anime.mal_id}">
         ✖
     </button>
-    <a href="/anime_pages/index.html?anime=${anime.mal_id}">
+    <a href="anime_pages/index.html?anime=${anime.mal_id}">
     <img src="${anime.images.webp.large_image_url}" alt="${anime.title} image" loading="lazy">
     </a>
     <p class="score">⭐ ${anime.score}</p>
