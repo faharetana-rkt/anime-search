@@ -402,4 +402,5 @@ footer a {
 .favorites {
   display: flex;
   justify-content: space-around;
+  min-height: 250px;
 }

@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   root: "src/",
+  base: "/anime-search/",
   build: {
     outDir: "../dist",
     rollupOptions: {

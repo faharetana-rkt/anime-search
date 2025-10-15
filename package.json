@@ -4,6 +4,7 @@
   "description": "This is an app where we can search for various anime related news and anime.",
   "main": "index.js",
   "scripts": {
+    "dev": "vite --base=/anime-search/",
     "start": "vite",
     "test": "jest",
     "build": "vite build --emptyOutDir",
