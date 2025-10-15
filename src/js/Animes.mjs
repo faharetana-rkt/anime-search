@@ -4,7 +4,7 @@ import Data from "./Data.mjs";
 function templateFunction(anime) {
     return `
     <div class="anime-card">
-    <a href="anime_pages/index.html?anime=${anime.mal_id}">
+    <a href="anime-search/anime_pages/index.html?anime=${anime.mal_id}">
     <img src="${anime.images.webp.large_image_url}" alt="${anime.title} image" loading="lazy">
     </a>
     <p class="score">⭐ ${anime.score}</p>
