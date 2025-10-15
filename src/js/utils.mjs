@@ -47,4 +47,14 @@ export function getParams(name) {
     return anime;
 };
 
+export function getLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+};
 
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+};
+
+export function existsInArray(array, animeId) {
+  return array.some(anime => anime.mal_id === animeId);
+};

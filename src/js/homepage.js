@@ -20,3 +20,4 @@ news.init();
 const animeContainer = document.querySelector("#top-animes");
 const animes = new Animes(animeContainer);
 animes.init();
+
