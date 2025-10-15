@@ -404,3 +404,12 @@ footer a {
   justify-content: space-around;
   min-height: 250px;
 }
+
+.no-more-para {
+  font-size: 1.5rem;
+  background: var(--gold);
+  padding: 15px;
+  height: 35px;
+  border-radius: 5px;
+  color: var(--background-color);
+}
