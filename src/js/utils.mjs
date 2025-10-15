@@ -56,5 +56,5 @@ export function setLocalStorage(key, data) {
 };
 
 export function existsInArray(array, animeId) {
-  return array.some(anime => anime.mal_id === animeId);
+  return array.some(anime => String(anime.mal_id) === String(animeId));
 };

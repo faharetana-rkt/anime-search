@@ -4,7 +4,7 @@ import Data from "./Data.mjs";
 function templateFunction(anime) {
     return `
     <div class="anime-card">
-    <button class="add-to-favorite" aria-label="add to favorite button" data-id="${anime.mal_id}">
+    <button class="remove-from-favorite" aria-label="remove from favorite button" data-id="${anime.mal_id}">
         ✖
     </button>
     <a href="/anime_pages/index.html?anime=${anime.mal_id}">
@@ -40,9 +40,8 @@ export default class Favorites {
 
     removeFromFavorites(mal_id) {
         const array = getLocalStorage(this.key);
-        const filtered = array.filter(item => item.mal_id !== mal_id);
+        const filtered = array.filter(item => String(item.mal_id) !== String(mal_id));
         setLocalStorage(this.key, filtered);
-        return filtered;
     };
 
     renderFavorites(parentElement) {

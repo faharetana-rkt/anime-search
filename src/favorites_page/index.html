@@ -8,15 +8,15 @@
     <meta name="author" content="Faharetana" />
     <meta name="description" content="This is the final project titled Anime Search for WDD330" />
     <!-- Facebook meta tags -->
-    <meta property="og:title" content="Anime Search search page" />
+    <meta property="og:title" content="Anime Search favorites page" />
     <meta property="og:type" content="Website" />
     <meta property="og:image" content="https://faharetana-rkt.github.io/anime-search/images/logo.webp" />
     <meta property="og:url" content="https://faharetana-rkt.github.io/anime-search/" />
     <meta property="og:description" content="This is the search page for the Anime Search website" />
     <meta property="og:image:alt" content="Logo of the Anime Search website" />
     <!-- Twitter meta tags -->
-    <meta property="twitter:title" content="Anime Search homepage" />
-    <meta property="twitter:description" content="This is the searc page for the Anime Search website" />
+    <meta property="twitter:title" content="Anime Search favorites page" />
+    <meta property="twitter:description" content="This is the favorites page for the Anime Search website" />
     <meta property="twitter:image" content="https://faharetana-rkt.github.io/anime-search/images/logo.webp" />
     <meta property="twitter:card" content="summary_large_image" />
     <!--Preconnect to google fonts-->
@@ -35,7 +35,7 @@
     <!-- Favicon -->
     <link rel="icon" href="../images/favicon1.png" />
     <!-- Scripts for JS -->
-    <script src="../js/search.js" type="module"></script>
+    <script src="../js/favorites.js" type="module"></script>
 </head>
 
 <body>
@@ -47,19 +47,15 @@
             <ul class="navLink">
                 <li><a href="../index.html" class="link">Home</a></li>
                 <li><a href="../search_page/index.html" class="link">Search</a></li>
-                <li><a href="../favorites_page/index.html" class="link">Favorites</a></li>
+                <li><a href="index.html" class="link">Favorites</a></li>
             </ul>
         </nav>
         <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <main>
-        <div class="search-container">
-            <h1 class="h1">Search for your anime here</h1>
-            <div class="search">
-                <span class="search-icon material-symbols-outlined"> search </span>
-                <input class="search-input" type="search" placeholder="E.g.: Naruto, One Piece, One Punch Man" />
-            </div>
-            <div class="searched-anime">
+        <div class="favorites-container">
+            <h1 class="h1">Find your favorites here</h1>
+            <div class="favorites">
             </div>
         </div>
     </main>
