@@ -19,14 +19,14 @@ const parentElement = document.querySelector(".searched-anime");
 const favorites = new Favorites("animes");
 
 searchBar.addEventListener("keydown", (e) => {
-    if(e.key === "Enter") {
-        const renderAnimes = new Search(parentElement, searchBar.value);
-        renderAnimes.init();
-    }
+  if (e.key === "Enter") {
+    const renderAnimes = new Search(parentElement, searchBar.value);
+    renderAnimes.init();
+  }
 });
 
 parentElement.addEventListener("click", (e) => {
-    const btn = e.target.closest(".add-to-favorite");
-    const mal_id = btn.dataset.id;
-    favorites.addToFavorites(mal_id);
+  const btn = e.target.closest(".add-to-favorite");
+  const mal_id = btn.dataset.id;
+  favorites.addToFavorites(mal_id);
 });

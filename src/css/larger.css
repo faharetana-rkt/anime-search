@@ -55,7 +55,7 @@
     & ul {
       width: 70%;
     }
-    
+
     & img {
       width: 20%;
       height: auto;
@@ -71,5 +71,4 @@
   .unavailable {
     height: 60px;
   }
-
 }

@@ -1,4 +1,9 @@
-import { renderYear, toggleOpenClass, detectActivePage, getParams } from "./utils.mjs";
+import {
+  renderYear,
+  toggleOpenClass,
+  detectActivePage,
+  getParams,
+} from "./utils.mjs";
 import Data from "./Data.mjs";
 import Anime from "./Anime.mjs";
 
