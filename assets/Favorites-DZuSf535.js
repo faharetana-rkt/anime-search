@@ -1,4 +1,4 @@
-import{c as s,e as n,D as c,s as o,r as d}from"./Data-CxdGCdzi.js";function m(a){return`
+import{c as s,e as n,D as c,s as o,r as d}from"./Data-BeI8i1BC.js";function m(a){return`
     <div class="anime-card">
     <button class="remove-from-favorite" aria-label="remove from favorite button" data-id="${a.mal_id}">
         ✖
