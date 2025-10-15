@@ -1,4 +1,4 @@
-import { renderYear, toggleOpenClass, detectActivePage } from "./utils.mjs";
+import { renderYear, toggleOpenClass, detectActivePage} from "./utils.mjs";
 import AnimeNews from "./AnimeNews.mjs";
 import Animes from "./Animes.mjs";
 import Favorites from "./Favorites.mjs";
