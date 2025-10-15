@@ -3,7 +3,7 @@ import{c as s,e as n,D as c,s as o,r as d}from"./Data-BJxmCOTU.js";function m(a)
     <button class="remove-from-favorite" aria-label="remove from favorite button" data-id="${a.mal_id}">
         ✖
     </button>
-    <a href="anime_pages/index.html?anime=${a.mal_id}">
+    <a href="anime-search/anime_pages/index.html?anime=${a.mal_id}">
     <img src="${a.images.webp.large_image_url}" alt="${a.title} image" loading="lazy">
     </a>
     <p class="score">⭐ ${a.score}</p>
